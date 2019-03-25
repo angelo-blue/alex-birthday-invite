@@ -45,6 +45,32 @@
 *::after {
   box-sizing: border-box; }
 
+    body {
+      animation: colorchange 25s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 25s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: blue;}
+      23%  {background: indigo;}
+      46%  {background: green;}
+      69%  {background: orange;}
+      92% {background: red;}
+      99% {background: blue;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+          0%   {background: blue;}
+      24%  {background: indigo;}
+      48%  {background: green;}
+      72%  {background: orange;}
+      96% {background: red;}
+      100% {background: blue;}
+    }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;

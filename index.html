@@ -12,14 +12,14 @@
   <link rel="stylesheet" href="neon.css" type="text/css"> </head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
 
-<body>
+<body style="background-color:indigo">
 
   <div class="py-5 text-center text-success">
     <div class="container">
 
       <div class="row">
         <div class="col-12">
-          <h1 class="text-capitalize display-2 tlt">Alex's birthday</h1>
+          <h1 class="text-capitalize display-1 tlt">Alex's birthday</h1>
         </div>
       </div>
     </div>
@@ -27,8 +27,8 @@
   <div class="py-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h1 class="tlt1">The Avengers - Infinity War</h1>
+        <div class="col-md-12 text-c-enter">
+          <h1 class="tlt1">Laser Force</h1>
         </div>
       </div>
     </div>
@@ -37,7 +37,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <img class="img-fluid d-block mx-auto" src="https://media.giphy.com/media/xT0xeCWenwEAHkMQV2/giphy.gif" width="100%"> </div>
       </div>
     </div>
   </div>
@@ -45,11 +44,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-centre">
-          <p class="lead">Saturday 5th May - 2:15-7:00 (Includes Dinner). &nbsp;. &nbsp;
+          <p class="lead">Saturday 27th April - 1:30pm-5:00pm. &nbsp;
             <br>
-            <br>Drop off at The Embassy.
+            <br>Drop off at 7 Harrold Street 1.30pm
             <br>
-            <br>Pick up 7 Harrold St. &nbsp;</p>
+            <br>Pick up Laser Force 5pm. &nbsp;</p>
         </div>
       </div>
       <div class="row">
@@ -74,13 +73,13 @@
 <script>
 $(function () {
 	$('.tlt').textillate(
-		{ in: { effect: 'fadeInUpBig', shuffle:true }, 
-		  out: { effect: 'hinge', shuffle:true }, 
+		{ in: { effect: 'bounceInDown', reverse:true }, 
+		  out: { effect: 'rollOut', shuffle:true }, 
 		  loop: true 
 		});
 $('.tlt1').textillate(
-		{ in: { effect: 'rotateInDownLeft', shuffle:true }, 
-		  out: { effect: 'bounceOutUp', shuffle:true }, 
+		{ in: { effect: 'fadeInUp', shuffle:true }, 
+		  out: { effect: 'bounceOutUp', sync:true }, 
 		  loop: true 
 		});
 })
