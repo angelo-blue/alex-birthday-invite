@@ -28,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-c-enter">
-          <h1 class="tlt1">Laser Force</h1>
+          <h1 class="display-4 tlt1">Laser Force</h1>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
         <div class="col-md-12 text-centre">
           <p class="lead">Saturday 27th April - 1:30pm-5:00pm. &nbsp;
             <br>
-            <br>Drop off at 7 Harrold Street 1.30pm
+            <br class="tlt2">Drop off at 7 Harrold Street 1.30pm
             <br>
             <br>Pick up Laser Force 5pm. &nbsp;</p>
         </div>
@@ -80,6 +80,11 @@ $(function () {
 $('.tlt1').textillate(
 		{ in: { effect: 'fadeInUp', shuffle:true }, 
 		  out: { effect: 'bounceOutUp', sync:true }, 
+		  loop: true 
+		});
+$('.tlt2').textillate(
+		{ in: { effect: 'flip', sequence:true }, 
+		  out: { effect: 'bounceOutUp', reverse:true }, 
 		  loop: true 
 		});
 })
